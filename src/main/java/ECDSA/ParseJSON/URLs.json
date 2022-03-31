@@ -1,0 +1,22 @@
+[
+  {
+    "type": "main",
+    "email": "695612981anthony@gmail.com",
+    "url": "https://mainnet.infura.io/v3/22d6a5974f25485397c011159543ae95"
+  },
+  {
+    "type": "secondary",
+    "email": "5244934@gmail.com",
+    "url": "https://mainnet.infura.io/v3/cd601df89a60461f9d744777d13769a5"
+  },
+  {
+    "type": "secondary",
+    "email": "akozinau@gmail.com",
+    "url": "https://mainnet.infura.io/v3/42e3f26ba3b3456a8517305b2dce2201"
+  },
+  {
+    "type": "secondary",
+    "email": "null",
+    "url": "https://mainnet.infura.io/v3/083836b2784f48e19e03487eb3209923"
+  }
+]
