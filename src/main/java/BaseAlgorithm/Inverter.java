@@ -20,25 +20,18 @@ public class Inverter {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-//        System.out.println(methodM(Integer.parseInt(scanner.nextLine())));
+        System.out.println(recursion(12345));
+        System.out.println(methodM(12345));
+    }
 
-        int[] x = {123,1,2,4,632,32,5,2,56,6,234,546,8,45,23,4};
-        boolean isSorted = false;
-        int buffer = 0;
-        while (!isSorted) {
-            isSorted = true;
-            for (int i = 0; i < x.length - 1; i++) {
+    public static int recursion(int i) {
 
-                if (x[i] > x[i + 1]) {
-                    isSorted = false;
-                    buffer = x[i];
-                    x[i] = x[i + 1];
-                    x[i + 1] = buffer;
-                }
-            }
-
+        int result = 0;
+        while (i != 0) {
+            int j = i % 10;
+            result = result * 10 + j;
+            i = i/ 10;
         }
-        System.out.println(Arrays.toString(x));
+        return result;
     }
 }
