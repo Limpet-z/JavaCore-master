@@ -1,4 +1,4 @@
-package stepic._5_input_output.my_guide;
+package stepic._5_input_output.my_guide.nio;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,9 +25,6 @@ public class Converting_a_Path { // Преобразование пути
 
         Integer io = 0;
 
-        Files files;
-        files.
-        Files.move()
 
 
         /**
