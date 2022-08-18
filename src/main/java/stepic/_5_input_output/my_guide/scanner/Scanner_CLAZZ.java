@@ -7,6 +7,7 @@ public class Scanner_CLAZZ {
     // Scanner - самый популярный класс для чтения отовсюду !!!
 
     // System.in - читает строку из консоли
+    //
     Scanner scanner1 = new Scanner(System.in);
 
 
