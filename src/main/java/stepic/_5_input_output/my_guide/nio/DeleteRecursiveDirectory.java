@@ -6,11 +6,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-public class DELETE_RECURSIVE_DIRECTORIES {
+public class DeleteRecursiveDirectory {
 
     public static void main(String[] args) throws IOException {
 
-        String str = "C:\\Users\\322\\Desktop\\Test";
+        String str = "/home/limp/Desktop/Test";
         Path path = Paths.get(str);
 
         if (Files.exists(path)) {

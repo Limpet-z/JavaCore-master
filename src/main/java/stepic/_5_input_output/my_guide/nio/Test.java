@@ -8,10 +8,10 @@ import java.nio.file.Paths;
 
 public class Test {
 
-    Path path = Paths.get("C:\\Users\\322\\Desktop\\Tinkoff Task");
+    Path path = Paths.get("/home/limp/Desktop/Tinkoff Task");
 
     public static void main(String[] args) {
-        Path path = Paths.get("C:\\Users\\322\\Desktop\\Tinkoff Task");
+        Path path = Paths.get("/home/limp/Desktop/Tinkoff Task");
         path.getFileName();
         path.getFileSystem();
         System.out.println(path.getFileSystem());

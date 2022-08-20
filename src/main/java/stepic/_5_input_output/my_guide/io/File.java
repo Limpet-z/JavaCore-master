@@ -1,4 +1,4 @@
-package stepic._5_input_output.my_guide.File;
+package stepic._5_input_output.my_guide.io;
 
 import java.io.IOException;
 

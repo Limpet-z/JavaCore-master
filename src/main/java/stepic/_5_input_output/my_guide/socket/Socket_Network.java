@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class Socket_Network {
 
-    public static void socketConnection() throws IOException {
+    public static void main(String[] args) throws IOException {
         try (Socket socket = new Socket("localhost", 80)) {
 
             OutputStream outputStream = socket.getOutputStream();
