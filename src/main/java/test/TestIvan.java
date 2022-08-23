@@ -1,12 +1,18 @@
 package test;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
 public class TestIvan {
+
+    public static String method(InputStream inputStream1, Character character) {
+        return null;
+    }
+
     public static void main(String[] args) throws Throwable {
 
         // IO - writer
@@ -40,9 +46,14 @@ public class TestIvan {
                 .forEach(System.out::println);
 
         List<String> stringList = Files.readAllLines(Paths.get("./out/file1.txt"));
-        for (String str: stringList) {
+        for (String str : stringList) {
             System.out.println(str);
         }
+
+        // ByteArrayInputStream
+        InputStream inputStream1 = new ByteArrayInputStream(new byte[]{48, 49, 50, 51});
+       // dohua constructors
+
 
     }
 }

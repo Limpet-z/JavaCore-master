@@ -7,26 +7,51 @@ import java.util.Scanner;
 public class WorkPlace_02 {
 
     public static int method(StringBuilder builder) {
-        int y1 = 0;
-        int y2 = 0;
-        int result;
+
+        int result = 0;
+        int maxX;
+        int minX;
+        int maxY;
+        int minY;
 
         String s = builder.toString();
-        String s2 = Arrays.toString(s.split(" "));
-        for (int i = 0; i < s2.length(); i++) {
+        String s2 = s.replaceAll(" ", "");
 
-            var c1 = s2.charAt(1);
-            var c2 = s2.charAt(3);
 
-           y1 = Character.getNumericValue(c1);
-            y2 = Character.getNumericValue(c2);
-        }
+            var x1 = s2.charAt(0);
+            int x11 = Character.getNumericValue(x1);
+            var y1 = s2.charAt(1);
+            int y11 = Character.getNumericValue(y1);
+            var x2 = s2.charAt(2);
+            int x22 = Character.getNumericValue(x2);
+            var y2 = s2.charAt(3);
+            int y22 = Character.getNumericValue(y2);
 
-        if (y1 >= y2) {
-            result = (y1 - y2)^2;
-        } else {
-            result = (y2 - y1)^2;
-        }
+            if (x11 >= x22) {
+                maxX = x11;
+                minX = x22;
+            } else {
+                maxX = x22;
+                minX = x11;
+            }
+            if (y11 >= y22) {
+                maxY = y11;
+                minY = y22;
+            } else {
+                maxY = y22;
+                minY = y11;
+            }
+
+            int c = maxX - minX;
+            int d = maxY - minY;
+
+            if (c >= d) {
+                result = (int) Math.pow(c, 2);
+            } else  {
+                result = (int) Math.pow(d, 2);
+            }
+
+
         return result;
     }
 
